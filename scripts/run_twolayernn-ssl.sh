@@ -2,18 +2,20 @@
 
 source activate img-classifcation
 
-EXP_NAME=onelayercnn-49k
+EXP_NAME=twolayernn-ssl
 
-flags="--model onelayercnn \
-       --train-data-size 49000 \
+flags="--model twolayernn \
+       --training-mode semi-supervised \
+       --train-data-size 4000 \
        --batch-size 64 \
-       --epochs 80 \
+       --ssl-label-generation-batch-size 64 \
+       --epochs 160 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \
        --lr-reducer \
        --weight-decay 5e-4 \
-       --exp-name ${EXP_NAME} \
+       --exp-name ${EXP_NAME}  \
        --tensorboard \
        --filelogger "
 

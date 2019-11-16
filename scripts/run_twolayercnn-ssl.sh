@@ -2,14 +2,16 @@
 
 source activate img-classifcation
 
-EXP_NAME=alexnet-49k
+EXP_NAME=twolayercnn-ssl
 
-flags="--model alexnet \
-       --train-data-size 49000 \
-       --batch-size 128 \
-       --epochs 100 \
+flags="--model twolayercnn \
+       --training-mode semi-supervised \
+       --train-data-size 4000 \
+       --batch-size 64 \
+       --ssl-label-generation-batch-size 64 \
+       --epochs 160 \
        --data-aug \
-       --optimiser sgd \
+       --optimiser adam \
        --learning-rate 0.001 \
        --lr-reducer \
        --weight-decay 5e-4 \

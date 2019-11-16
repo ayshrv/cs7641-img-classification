@@ -2,16 +2,17 @@
 
 source activate img-classifcation
 
-EXP_NAME=softmax-49k
+EXP_NAME=alexnet-ssl
 
-flags="--model softmax \
-       --train-data-size 49000 \
-       --batch-size 512 \
-       --epochs 40 \
+flags="--model alexnet \
+       --training-mode semi-supervised \
+       --train-data-size 4000 \
+       --batch-size 128 \
+       --ssl-label-generation-batch-size 64 \
+       --epochs 100 \
        --data-aug \
        --optimiser sgd \
-       --learning-rate 0.01 \
-       --momentum 0.9 \
+       --learning-rate 0.001 \
        --lr-reducer \
        --weight-decay 5e-4 \
        --exp-name ${EXP_NAME} \

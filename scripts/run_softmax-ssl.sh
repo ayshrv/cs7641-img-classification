@@ -2,12 +2,14 @@
 
 source activate img-classifcation
 
-EXP_NAME=softmax-49k
+EXP_NAME=softmax-ssl
 
 flags="--model softmax \
-       --train-data-size 49000 \
+       --training-mode semi-supervised \
+       --train-data-size 4000 \
        --batch-size 512 \
-       --epochs 40 \
+       --ssl-label-generation-batch-size 64 \
+       --epochs 80 \
        --data-aug \
        --optimiser sgd \
        --learning-rate 0.01 \
