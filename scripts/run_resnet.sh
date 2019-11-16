@@ -7,7 +7,7 @@ EXP_NAME=resnet-49k
 flags="--model resnet \
        --train-data-size 49000 \
        --batch-size 64 \
-       --epochs 40 \
+       --epochs 100 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \

@@ -9,7 +9,7 @@ flags="--model resnet \
        --not-full-data \
        --train-data-size 4000 \
        --batch-size 64 \
-       --epochs 40 \
+       --epochs 100 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \
