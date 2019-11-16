@@ -9,7 +9,7 @@ flags="--model twolayernn \
        --train-data-size 4000 \
        --batch-size 64 \
        --ssl-label-generation-batch-size 64 \
-       --epochs 160 \
+       --epochs 240 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \
