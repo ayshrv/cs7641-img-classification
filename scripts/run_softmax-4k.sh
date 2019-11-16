@@ -9,7 +9,7 @@ flags="--model softmax \
        --not-full-data \
        --train-data-size 4000 \
        --batch-size 512 \
-       --epochs 120 \
+       --epochs 160 \
        --data-aug \
        --optimiser sgd \
        --learning-rate 0.01 \

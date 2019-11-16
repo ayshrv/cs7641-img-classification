@@ -7,7 +7,7 @@ EXP_NAME=softmax-49k
 flags="--model softmax \
        --train-data-size 49000 \
        --batch-size 512 \
-       --epochs 40 \
+       --epochs 160 \
        --data-aug \
        --optimiser sgd \
        --learning-rate 0.01 \
