@@ -258,7 +258,7 @@ class ModelTrainer:
             acc = 100.0 * correct / n_examples
 
             if verbose:
-                loss, acc = utils.convert_for_print(loss, acc)
+                loss, acc, correct = utils.convert_for_print(loss, acc, correct)
                 print(
                     "\nLabel Generation Performance Average loss: %0.4f, Accuracy: %d/%d (%0.1f%%)"
                     % (loss, correct, n_examples, acc)
