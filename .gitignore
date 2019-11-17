@@ -1,4 +1,5 @@
 checkpoints/
+checkpoints_backup
 data/
 sbatch_logs/
 .DS_Store
