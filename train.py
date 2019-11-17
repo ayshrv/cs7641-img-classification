@@ -343,6 +343,7 @@ class ModelTrainer:
         self.epoch_timer.time_since_init(print_str="Total")
 
 
+
 if __name__ == "__main__":
     args = params.parse_args()
     utils.set_random_seed(args.seed, args.cuda)

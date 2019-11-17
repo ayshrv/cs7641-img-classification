@@ -2,7 +2,7 @@
 
 source activate img-classifcation
 
-EXP_NAME=threelayernn-49k
+EXP_NAME=threelayernn-2
 
 flags="--model threelayernn \
        --train-data-size 49000 \
@@ -12,7 +12,7 @@ flags="--model threelayernn \
        --optimiser adam \
        --learning-rate 0.001 \
        --lr-reducer \
-       --weight-decay 5e-4 \
+       --weight-decay 5e-6 \
        --exp-name ${EXP_NAME} \
        --tensorboard \
        --filelogger "
