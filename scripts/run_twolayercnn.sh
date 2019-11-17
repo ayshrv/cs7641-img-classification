@@ -7,7 +7,7 @@ EXP_NAME=twolayercnn-49k
 flags="--model twolayercnn \
        --train-data-size 49000 \
        --batch-size 64 \
-       --epochs 80 \
+       --epochs 160 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \

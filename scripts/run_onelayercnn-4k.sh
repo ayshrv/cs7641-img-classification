@@ -9,7 +9,7 @@ flags="--model onelayercnn \
        --not-full-data \
        --train-data-size 4000 \
        --batch-size 64 \
-       --epochs 240 \
+       --epochs 120 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \

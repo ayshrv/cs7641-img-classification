@@ -9,7 +9,7 @@ flags="--model alexnet \
        --not-full-data \
        --train-data-size 4000 \
        --batch-size 128 \
-       --epochs 100 \
+       --epochs 350 \
        --data-aug \
        --optimiser sgd \
        --learning-rate 0.001 \

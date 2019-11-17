@@ -7,7 +7,7 @@ EXP_NAME=threelayernn-49k
 flags="--model threelayernn \
        --train-data-size 49000 \
        --batch-size 64 \
-       --epochs 80 \
+       --epochs 240 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \

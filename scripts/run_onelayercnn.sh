@@ -7,7 +7,7 @@ EXP_NAME=onelayercnn-49k
 flags="--model onelayercnn \
        --train-data-size 49000 \
        --batch-size 64 \
-       --epochs 80 \
+       --epochs 120 \
        --data-aug \
        --optimiser adam \
        --learning-rate 0.001 \
